@@ -6,7 +6,7 @@ floatpad.Anchored = true
 floatpad.Transparency = 1
 floatpad.Name = "FloatPad"
 
-local loadedscript = game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/functions/viciousbeeserverhop.lua")
+local loadedscript = game:HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/function/viciousbeeserverhop.lua")
 
 noclip = false
 local farmVici = false
@@ -47,7 +47,7 @@ if not File then
     writefile("PrevServers.txt", game.JobId)
 end
 
-local Cookie = loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/functions/auth"))()()
+local Cookie = loadstring(game:HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/function/auth"))()()
 local actualHour = os.date("!*t").hour
 local Deleted = false
 
