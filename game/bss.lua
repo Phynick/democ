@@ -6,11 +6,11 @@ getgenv().ExploitSpecific = "📜"
 
 -- API CALLS
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/library.lua"))()
-getgenv().api = loadstring(game: HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/api.lua"))()
-local bssapi = loadstring(game: HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/bssapi.lua"))()
-if not isfolder("kocmoc") then makefolder("kocmoc") end
-if not isfolder("kocmoc/premium") then makefolder("kocmoc/premium") end
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/library.lua"))()
+getgenv().api = loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/DemoC/main/api.lua"))()
+local bssapi = loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/bssapi.lua"))()
+if not isfolder("democ") then makefolder("democ") end
+if not isfolder("democ/premium") then makefolder("democ/premium") end
 if isfile('kocmoc.txt') == false then(syn and syn.request or http_request or request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = { ["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({ cmd = "INVITE_BROWSER",args = { code = "kTNMzbxUuZ"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kocmoc.txt', "discord")})end
 
 -- Script temporary variables
@@ -38,7 +38,7 @@ for _, v in pairs(game: GetService("CoreGui"):GetDescendants()) do
             end
         end
         getgenv().temptable = {
-    version = "3.3.1",
+    version = "1.1.1",
     blackfield = "Sunflower Field",
     redfields = { },
     bluefields = { },
