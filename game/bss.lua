@@ -347,7 +347,7 @@ getgenv().DemoCPremium = {
 
 }
 
---functions
+--function
 
 function statsget() local StatCache = require(game.ReplicatedStorage.ClientStatCache) local stats = StatCache:Get() return stats end
 function farm(trying)
@@ -875,11 +875,11 @@ local misctab = Window:CreateTab("Misc")
 local setttab = Window:CreateTab("Settings")
 
 local loadingInfo = hometab:CreateSection("Startup")
-local loadingFunctions = loadingInfo:CreateLabel("Loading Functions..")
+local loadingFunction = loadingInfo:CreateLabel("Loading Functions..")
 wait(1)
-loadingFunctions: UpdateText("Loaded Functions")
+loadingFunction: UpdateText("Loaded Functions")
 local loadingBackend = loadingInfo:CreateLabel("Loading Backend..")
-loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/DemoC/main/functions/premium/loadperks.lua"))()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/function/premium/loadperks.lua"))()
 if getgenv().LoadPremium then
 getgenv().LoadPremium("WindowLoad", Window)
 --temporary sh patch
@@ -896,7 +896,7 @@ writefile("PrevServers2.txt", s)
 else
     warn("Error loading DemoC Premium")
 end
---loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/DemoC/main/functions/premium/loadperks.lua"))()("WindowLoad", Window)
+--loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/function/premium/loadperks.lua"))()("WindowLoad", Window)
 
 
 
