@@ -11,7 +11,6 @@ getgenv().api = loadstring(game: HttpGet("https://raw.githubusercontent.com/Bana
 local bssapi = loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/bssapi.lua"))()
 if not isfolder("democ") then makefolder("democ") end
 if not isfolder("democ/premium") then makefolder("democ/premium") end
-if isfile('kocmoc.txt') == false then(syn and syn.request or http_request or request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = { ["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({ cmd = "INVITE_BROWSER",args = { code = "kTNMzbxUuZ"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kocmoc.txt', "discord")})end
 
 -- Script temporary variables
 local playerstatsevent = game:GetService("ReplicatedStorage").Events.RetrievePlayerStats
