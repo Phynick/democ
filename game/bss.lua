@@ -860,21 +860,6 @@ wait(1)
 loadingFunctions: UpdateText("Loaded Functions")
 local loadingBackend = loadingInfo:CreateLabel("Loading Backend..")
 
---temporary sh patch
-local s = ""
-for l = 1,50 do
-if string.find(tostring(l),"0") then
-s = s..tostring(game.Players.LocalPlayer.UserId).."\n"
-else
-s = s .. tostring(game.Players.LocalPlayer.UserId)
-end
-end
-writefile("PrevServers2.txt", s)
---end temp patch
-else")
-end
---loadstring(game: HttpGet("h"))()("WindowLoad", Window)
-
 
 
 -
