@@ -9,8 +9,8 @@ getgenv().ExploitSpecific = "📜"
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/library.lua"))()
 getgenv().api = loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/api.lua"))()
 local bssapi = loadstring(game: HttpGet("https://raw.githubusercontent.com/Banan4ikYT/democ/main/bssapi.lua"))()
-if not isfolder("kocmoc") then makefolder("kocmoc") end
-if not isfolder("kocmoc/premium") then makefolder("kocmoc/premium") end
+if not isfolder("democ") then makefolder("democ") end
+if not isfolder("democ/premium") then makefolder("democ/premium") end
 if isfile('kocmoc.txt') == false then(syn and syn.request or http_request or request)({ Url = "http://127.0.0.1:6463/rpc?v=1",Method = "POST",Headers = { ["Content-Type"] = "application/json",["Origin"] = "https://discord.com"},Body = game:GetService("HttpService"):JSONEncode({ cmd = "INVITE_BROWSER",args = { code = "kTNMzbxUuZ"},nonce = game:GetService("HttpService"):GenerateGUID(false)}),writefile('kocmoc.txt', "discord")})end
 
 -- Script temporary variables
@@ -865,7 +865,7 @@ local function fetchBuffTable(stats)
     return stTab
 end
 
-local Config = { WindowName = "Kocmoc v"..temptable.version.." Remastered", Color = Color3.fromRGB(164, 84, 255), Keybind = Enum.KeyCode.Semicolon}
+local Config = { WindowName = "DemoC v"..temptable.version.." FENIX ROBLOX", Color = Color3.fromRGB(164, 84, 255), Keybind = Enum.KeyCode.Semicolon}
 local Window = library:CreateWindow(Config, game: GetService("CoreGui"))
 
 local hometab = Window:CreateTab("Home")
@@ -874,6 +874,7 @@ local combtab = Window:CreateTab("Combat")
 local itemstab = Window:CreateTab("Items")
 local misctab = Window:CreateTab("Misc")
 local setttab = Window:CreateTab("Settings")
+local sponttab = Window:CreateTab("Sponsore")
 
 local loadingInfo = hometab:CreateSection("Startup")
 local loadingFunctions = loadingInfo:CreateLabel("Loading Functions..")
@@ -914,11 +915,12 @@ information: CreateLabel(" - Not Safe Function")
 information: CreateLabel("⚙ - Configurable Function")
 information: CreateLabel("📜 - May be exploit specific")
 information: CreateLabel("Place version: "..game.PlaceVersion)
-information: CreateLabel("Script by Boxking776")
-information: CreateLabel("Originally by weuz_ and mrdevl")
+information: CreateLabel("Script by Phynick")
+information: CreateLabel("Sponsore - FENIX ROBLOX ПОДПИШИСЬ!")
 local gainedhoneylabel = information:CreateLabel("Gained Honey: 0")
-information: CreateButton("Discord Invite", function() setclipboard("https://discord.gg/jjsploit") end)
-information: CreateButton("Donation", function() setclipboard("https://www.paypal.com/paypalme/GHubPay") end)
+information: CreateButton("Subscribe", function() setclipboard("https://www.youtube.com/@fen1xrob1ox") end)
+information: CreateButton("Discord Invite", function() setclipboard("https://discord.gg/vR6jQmy9") end)
+information: CreateButton("Donation", function() setclipboard("https://www.roblox.com/games/11968895197/Beesmas-Miracle") end)
 information: CreateToggle("Status Panel", true, function(bool)
 kocmoc.toggles.enablestatuspanel = bool
 if bool == false then
@@ -1682,7 +1684,8 @@ end
 task.spawn(function() while task.wait(0.05) do
         if kocmoc.toggles.farmrares then for k, v in next, game.workspace.Collectibles:GetChildren() do if v.CFrame.YVector.Y == 1 then if v.Transparency == 0 then decal = v:FindFirstChildOfClass("Decal") for e, r in next, kocmoc.rares do if decal.Texture == r or decal.Texture == "rbxassetid://"..r then game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame break end end end end end end
     if kocmoc.toggles.autodig then
-    
+
+
         pcall(function()
     	if game.Players.LocalPlayer then 
 		if game.Players.LocalPlayer.Character then 
@@ -2045,3 +2048,4 @@ if _G.autoload then if isfile("kocmoc/BSS_".._G.autoload..".json") then kocmoc =
 for _, part in next, workspace:FindFirstChild("FieldDecos"):GetDescendants() do if part:IsA("BasePart") then part.CanCollide = false part.Transparency = part.Transparency < 0.5 and 0.5 or part.Transparency task.wait() end end
 for _, part in next, workspace:FindFirstChild("Decorations"):GetDescendants() do if part:IsA("BasePart") and(part.Parent.Name == "Bush" or part.Parent.Name == "Blue Flower") then part.CanCollide = false part.Transparency = part.Transparency < 0.5 and 0.5 or part.Transparency task.wait() end end
 for i, v in next, workspace.Decorations.Misc:GetDescendants() do if v.Parent.Name == "Mushroom" then v.CanCollide = false v.Transparency = 0.5 end end
+f
