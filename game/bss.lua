@@ -853,7 +853,7 @@ local combtab = Window:CreateTab("Combat")
 local itemstab = Window:CreateTab("Items")
 local misctab = Window:CreateTab("Misc")
 local setttab = Window:CreateTab("Settings")
-local sponsttab = Window:CreateTab("Sponsore")
+local sponstab = Window:CreateTab("Sponsore")
 
 local loadingInfo = hometab:CreateSection("Startup")
 local loadingFunctions = loadingInfo:CreateLabel("Loading Functions..")
@@ -2021,3 +2021,7 @@ if _G.autoload then if isfile("kocmoc/BSS_".._G.autoload..".json") then kocmoc =
 for _, part in next, workspace:FindFirstChild("FieldDecos"):GetDescendants() do if part:IsA("BasePart") then part.CanCollide = false part.Transparency = part.Transparency < 0.5 and 0.5 or part.Transparency task.wait() end end
 for _, part in next, workspace:FindFirstChild("Decorations"):GetDescendants() do if part:IsA("BasePart") and(part.Parent.Name == "Bush" or part.Parent.Name == "Blue Flower") then part.CanCollide = false part.Transparency = part.Transparency < 0.5 and 0.5 or part.Transparency task.wait() end end
 for i, v in next, workspace.Decorations.Misc:GetDescendants() do if v.Parent.Name == "Mushroom" then v.CanCollide = false v.Transparency = 0.5 end end
+local sponsore = sponstab:CreateSection("Sponsore")
+sponsore: CreateButton("Subscribe", function() setclipboard("https://www.youtube.com/@fen1xrob1ox") end)
+sponsore: CreateButton("Discord Invite", function() setclipboard("https://discord.gg/MdzArBDc4p") end)
+sponsore: CreateButton("Donation", function() setclipboard("https://www.roblox.com/games/11968895197/Beesmas-Miracle") end)
