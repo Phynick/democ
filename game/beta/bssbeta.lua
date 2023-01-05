@@ -880,27 +880,7 @@ local loadingFunctions = loadingInfo:CreateLabel("Loading Functions..")
 wait(1)
 loadingFunctions: UpdateText("Loaded Functions")
 local loadingBackend = loadingInfo:CreateLabel("Loading Backend..")
-loadstring(game: HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/functions/premium/loadperks.lua"))()
-if getgenv().LoadPremium then
-getgenv().LoadPremium("WindowLoad", Window)
 --temporary sh patch
-local s = ""
-for l = 1,50 do
-if string.find(tostring(l),"0") then
-s = s..tostring(game.Players.LocalPlayer.UserId).."\n"
-else
-s = s .. tostring(game.Players.LocalPlayer.UserId)
-end
-end
-writefile("PrevServers2.txt", s)
---end temp patch
-else
-    warn("Error loading Kocmoc Premium")
-end
---loadstring(game: HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/functions/premium/loadperks.lua"))()("WindowLoad", Window)
-
-
-
 --loadPremium("WindowLoad", Window)
 
 loadingBackend: UpdateText("Loaded Backend")
@@ -914,12 +894,12 @@ information: CreateLabel(" - Not Safe Function")
 information: CreateLabel("⚙ - Configurable Function")
 information: CreateLabel("📜 - May be exploit specific")
 information: CreateLabel("Place version: "..game.PlaceVersion)
-information: CreateLabel("Script by Boxking776")
-information: CreateLabel("Originally by weuz_ and mrdevl")
+information: CreateLabel("Script by Phynick")
+information: CreateLabel("Sponsore - FENIX ROBLOX ПОДПИШИСЬ!")
 local gainedhoneylabel = information:CreateLabel("Gained Honey: 0")
-information: CreateButton("Discord Invite", function() setclipboard("https://discord.gg/jjsploit") end)
-information: CreateButton("Donation", function() setclipboard("https://www.paypal.com/paypalme/GHubPay") end)
-information: CreateToggle("Status Panel", true, function(bool)
+information: CreateButton("Subscribe", function() setclipboard("https://www.youtube.com/@fen1xrob1ox") end)
+information: CreateButton("Discord Invite", function() setclipboard("https://discord.gg/vR6jQmy9") end)
+information: CreateButton("Donation", function() setclipboard("https://www.roblox.com/games/11968895197/Beesmas-Miracle") end)
 kocmoc.toggles.enablestatuspanel = bool
 if bool == false then
 for i, v in pairs(game: GetService("CoreGui"):GetDescendants()) do
